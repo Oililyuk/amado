@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Main app -->
+  <url>
+    <loc>https://oililyuk.github.io/amado/rain.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://oililyuk.github.io/amado/rain.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oililyuk.github.io/amado/rain.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oililyuk.github.io/amado/rain.html"/>
+  </url>
+
+  <!-- Usage guide — Chinese -->
+  <url>
+    <loc>https://oililyuk.github.io/amado/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://oililyuk.github.io/amado/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oililyuk.github.io/amado/instruction.md"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oililyuk.github.io/amado/%E4%BD%BF%E3%81%84%E6%96%B9.md"/>
+  </url>
+
+  <!-- Usage guide — English -->
+  <url>
+    <loc>https://oililyuk.github.io/amado/instruction.md</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oililyuk.github.io/amado/instruction.md"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://oililyuk.github.io/amado/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oililyuk.github.io/amado/%E4%BD%BF%E3%81%84%E6%96%B9.md"/>
+  </url>
+
+  <!-- Usage guide — Japanese -->
+  <url>
+    <loc>https://oililyuk.github.io/amado/%E4%BD%BF%E3%81%84%E6%96%B9.md</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oililyuk.github.io/amado/%E4%BD%BF%E3%81%84%E6%96%B9.md"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://oililyuk.github.io/amado/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oililyuk.github.io/amado/instruction.md"/>
+  </url>
+
+</urlset>

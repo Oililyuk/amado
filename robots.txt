@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oililyuk.github.io/amado/sitemap.xml
