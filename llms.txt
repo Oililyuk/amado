@@ -1,0 +1,56 @@
+# Amado
+
+> Amado (雨戸 · 雨窗) is an open-source, zero-install ambient reading environment that renders a real-time WebGL rain-on-glass shader over any video or image background. It runs entirely in the browser as a single HTML file with no dependencies, no account, and no data collection.
+
+## What it is
+
+Amado is the only open-source project that combines a real-time WebGL2 rain shader with a Markdown reader in a single HTML file. It is not a web clipper or productivity tool — it is a reading atmosphere. The rain effect mathematically models static drops, trailing streaks, and falling layers that refract a live video background through each simulated droplet in real time on the GPU.
+
+## Who made it
+
+Original concept and prompt by mmguo (Rainy Typewriter). Rain shader based on Heartfelt by BigWings on Shadertoy. MIT licence.
+
+## Core features
+
+- Real-time WebGL2 rain-on-glass shader (GLSL fragment shader, 60 fps)
+- Cinematic video background streamed into WebGL texture live (London.mp4)
+- Ambient rain audio with in-page volume control
+- Markdown reader: load local .md files or remote URLs
+- Text highlight and annotation (amber underline, session-scoped)
+- Lightning effect (toggleable, from the original Shadertoy composition)
+- Zero installation — one HTML file
+- Fully offline after initial load
+- No tracking, no telemetry, no external runtime requests
+- Multilingual usage guides: Chinese, English, Japanese
+- Mobile responsive
+
+## How the rain shader works
+
+A WebGL2 fragment shader runs on the GPU every frame. Three raindrop layers are composited: static micro-drops (StaticDrops), primary falling drops with trails (DropLayer2 at base scale), and a secondary layer at 1.85× scale. Each drop acts as a refractive lens — the background video texture is sampled with a UV offset derived from the drop's normal, creating the glass distortion effect. Blur is applied via textureLod, with focus depth driven by drop coverage. Parameters (rain intensity, blur, refraction, zoom, brightness, speed) are passed as WebGL uniforms and controlled live from the UI.
+
+## Files
+
+- rain.html — the entire application (single file, ~1300 lines)
+- London.mp4 — default background video, muted
+- dragon-studio-gentle-rain-07-437321.mp3 — ambient rain audio
+- 使用说明.md — usage guide in Chinese (loaded on startup)
+- instruction.md — usage guide in English
+- 使い方.md — usage guide in Japanese
+- README.md — full project documentation with FAQ and comparison table
+
+## Usage guides
+
+- Chinese: https://oililyuk.github.io/amado/使用说明.md
+- English: https://oililyuk.github.io/amado/instruction.md
+- Japanese: https://oililyuk.github.io/amado/使い方.md
+
+## Comparisons
+
+Amado vs Rain.fm: Rain.fm is audio-only and subscription-based. Amado is free, open-source, and adds a visual WebGL rain effect.
+Amado vs iA Writer: iA Writer is a writing application. Amado is a reading environment. Amado requires no installation or account.
+Amado vs Obsidian: Obsidian is a note-taking system. Amado is a single-file reader with no plugin ecosystem. Amado runs in any browser with no setup.
+Amado vs Notion: Notion requires an account and internet connection. Amado is fully offline and private.
+
+## Licence
+
+MIT — free to use, modify, and distribute.
